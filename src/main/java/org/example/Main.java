@@ -11,10 +11,14 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        ShapeCache shapeCache = new BasicShapeCache();
+        ShapeCache shapeCache = new UniqueCache();
         ShapeFactory f = new ShapeFactory(shapeCache);
         Shape circle = f.makeShape("CIRCLE", 10f);
-        System.out.println(circle);
+        Shape circle2 = f.makeShape("CIRCLE", 10f);
+        Circle c = (Circle) circle;
+        System.out.println(c);
+        c.radius=30;
+        System.out.println(shapeCache.getAllShapes());
 
 
 

@@ -3,7 +3,6 @@ package org.example.model;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.Set;
 
 //zwykla lista
 //2 - cache ktory zapisuje tylko unikatowe shapy
@@ -13,13 +12,15 @@ public class BasicShapeCache implements ShapeCache {
 
     List<Shape> shapes;
 
-    public BasicShapeCache(){
+    public BasicShapeCache() {
         shapes = new ArrayList<>();
     }
 
     @Override
-    public void saveShape(Shape shape) {
+    public Shape saveShape(Shape shape) {
+
         shapes.add(shape);
+        return shape;
     }
 
     @Override
