@@ -1,0 +1,1 @@
+- zrobic interfejs factory i iplementacje z oraz bez cacha
