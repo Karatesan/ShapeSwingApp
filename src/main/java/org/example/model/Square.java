@@ -5,10 +5,10 @@ import lombok.Data;
 @Data
 public class Square implements Shape{
 
-    private float bok;
+    private double bok;
 
     public Square(){}
-    public Square(float side){
+    public Square(double side){
         this.bok = side;
     }
 

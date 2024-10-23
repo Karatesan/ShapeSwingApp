@@ -8,7 +8,7 @@ public class Circle implements Shape {
     private double radius;
 
     public Circle(){}
-    public Circle(float radius){
+    public Circle(double radius){
         this.radius = radius;
     }
 

@@ -13,8 +13,11 @@ public class Main {
 
         ShapeCache shapeCache = new BasicShapeCache();
         ShapeFactory f = new ShapeFactory(shapeCache);
-        Shape circle = f.makeShape("CIRCLE", 10f);
-        System.out.println(circle);
+        Shape circle = f.makeShape(ShapeType.CIRCLE);
+        Shape rectangle = f.makeShape(ShapeType.RECTANGLE,10,20);
+
+        System.out.println(shapeCache.getAllShapes());
+
 
 
 
